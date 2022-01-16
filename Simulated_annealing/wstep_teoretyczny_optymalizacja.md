@@ -277,6 +277,7 @@ $$
 y = f(X)
 $$
 
+
 Wyuczone mapowanie będzie niedoskonałe. Żaden model nie jest doskonały, a pewien błąd przewidywania to
 oczekiwane, biorąc pod uwagę trudność problemu, szum w obserwowanych danych i wybór
 algorytm uczenia się. Matematycznie algorytmy uczące rozwiązują problem aproksymacji
