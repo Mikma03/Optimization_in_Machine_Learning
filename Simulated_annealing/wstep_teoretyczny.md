@@ -573,5 +573,84 @@ włączać:
 
 * Nieciągła funkcja celu (np. regiony z nieprawidłowymi rozwiązaniami).
 
+<p>&nbsp;</p>
+
+
+## Algorytmy bezpośrednie
+
+<p>&nbsp;</p>
+
+Algorytmy optymalizacji bezpośredniej są przeznaczone dla funkcji celu, dla których pochodne nie mogą być
+obliczony. Algorytmy są procedurami deterministycznymi i często przyjmują funkcję celu
+ma jedno globalne optima, np. unimodalny. Metody wyszukiwania bezpośredniego są również zwykle określane
+jako „wyszukiwanie wzorcowe”, ponieważ mogą poruszać się w przestrzeni wyszukiwania za pomocą geometrycznych kształtów lub decyzji,
+np. wzory.
+Informacja o gradiencie jest aproksymowana bezpośrednio (stąd nazwa) z wyniku
+funkcja celu porównująca względną różnicę między wynikami za punkty w przestrzeni wyszukiwania.
+Te bezpośrednie szacunki są następnie wykorzystywane do wyboru kierunku poruszania się w przestrzeni wyszukiwania i
+triangulować region optima.
+
+Examples of direct search algorithms include:
+
+<p>&nbsp;</p>
+
+* Cyclic Coordinate Search
+
+* Powell’s Method
+
+* Hooke-Jeeves Method
+
+* Nelder-Mead Simplex Search
+
+<p>&nbsp;</p>
+
+
+## Algorytmy stochastyczne
+
+<p>&nbsp;</p>
+
+Algorytmy optymalizacji stochastycznej to algorytmy wykorzystujące losowość w wyszukiwaniu
+procedura dla funkcji celu, dla których nie można obliczyć instrumentów pochodnych. w przeciwieństwie do
+deterministyczne metody wyszukiwania bezpośredniego, algorytmy stochastyczne zazwyczaj wymagają dużo więcej próbkowania
+funkcji celu, ale są w stanie poradzić sobie z problemami ze zwodniczymi optymami lokalnymi.
+
+Algorytmy optymalizacji stochastycznej obejmują:
+
+<p>&nbsp;</p>
+
+* Symulowane wyżarzanie
+
+* Strategia ewolucji
+
+* Metoda entropii krzyżowej
+
+<p>&nbsp;</p>
+
+## Algorytmy populacyjne
+
+<p>&nbsp;</p>
+
+Algorytmy optymalizacji populacji to stochastyczne algorytmy optymalizacji, które utrzymują pulę
+(populacja) rozwiązań kandydujących, które razem są wykorzystywane do próbkowania, badania i doskonalenia
+optymizm. Algorytmy tego typu są przeznaczone do rozwiązywania trudniejszych problemów obiektywnych, które:
+może mieć zaszumione oceny funkcji i wiele globalnych optimów (multimodalnych), a znalezienie dobrego lub wystarczająco dobrego rozwiązania jest trudne lub niewykonalne przy użyciu innych metod. Pula kandydatów
+rozwiązania zwiększają niezawodność wyszukiwania, zwiększając prawdopodobieństwo przezwyciężenia lokalnych optimów.
+
+Przykłady algorytmów optymalizacji populacji obejmują:
+
+<p>&nbsp;</p>
+
+* Algorytm genetyczny
+
+* Ewolucja różnicowa
+
+* Optymalizacja roju cząstek
+
+
+
+
+
+
+
 
 </p>

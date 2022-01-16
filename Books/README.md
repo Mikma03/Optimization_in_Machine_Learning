@@ -79,3 +79,56 @@ After introducing you to genetic algorithms and their principles of operation, y
 
 By the end of this book, you'll have hands-on experience of applying genetic algorithms in artificial intelligence as well as in numerous other domains.
 
+
+# Numerical Optimization (Springer Series in Operations Research and Financial Engineering)
+
+[Link to this book](https://www.amazon.com/Numerical-Optimization-Operations-Financial-Engineering/dp/0387303030/ref=as_li_ss_tl?dchild=1&keywords=Numerical+Optimization&qid=1610400406&s=books&sr=1-1&linkCode=sl1&tag=inspiredalgor-20&linkId=5d9d02335d0a1d1c4ef61c17fe0dcf03&language=en_US)
+
+
+
+<p align="center">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/41u0DAVRTZL._SX330_BO1,204,203,200_.jpg" />
+</p>
+
+
+Optimization is an important tool used in decision science and for the analysis of physical systems used in engineering. One can trace its roots to the Calculus of Variations and the work of Euler and Lagrange. This natural and reasonable approach to mathematical programming covers numerical methods for finite-dimensional optimization problems. It begins with very simple ideas progressing through more complicated concepts, concentrating on methods for both unconstrained and constrained optimization.
+
+
+# Introduction to Stochastic Search and Optimization
+
+[Link to this book](https://www.amazon.com/Introduction-Stochastic-Search-Optimization-James/dp/0471330523/ref=as_li_ss_tl?dchild=1&keywords=Stochastic+Optimization&qid=1602446340&sr=8-6&linkCode=sl1&tag=inspiredalgor-20&linkId=348fd7d3f90a0b2be899ef571bcfae40&language=en_US)
+
+
+<p align="center">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/41xcf0PCOpL._SX330_BO1,204,203,200_.jpg" />
+</p>
+
+
+A unique interdisciplinary foundation for real-world problem solving
+Stochastic search and optimization techniques are used in a vast number of areas, including aerospace, medicine, transportation, and finance, to name but a few. Whether the goal is refining the design of a missile or aircraft, determining the effectiveness of a new drug, developing the most efficient timing strategies for traffic signals, or making investment decisions in order to increase profits, stochastic algorithms can help researchers and practitioners devise optimal solutions to countless real-world problems.
+
+Introduction to Stochastic Search and Optimization: Estimation, Simulation, and Control is a graduate-level introduction to the principles, algorithms, and practical aspects of stochastic optimization, including applications drawn from engineering, statistics, and computer science. The treatment is both rigorous and broadly accessible, distinguishing this text from much of the current literature and providing students, researchers, and practitioners with a strong foundation for the often-daunting task of solving real-world problems.
+
+
+# Essentials of Metaheuristics (Second Edition)
+
+[Link to this book](https://www.amazon.com/Essentials-Metaheuristics-Second-Sean-Luke/dp/1300549629/ref=as_li_ss_tl?dchild=1&keywords=metaheuristics&qid=1602458321&sr=8-4&linkCode=sl1&tag=inspiredalgor-20&linkId=702a0756fc4522be5363edf82c2bc4a9&language=en_US)
+
+<p align="center">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/51YvXMULnhL._SX384_BO1,204,203,200_.jpg" />
+</p>
+
+Essentials of Metaheuristics covers these and other metaheuristics algorithms, and is intended for undergraduate students, programmers, and non-experts. The book covers a wide range of algorithms, representations, selection and modification operators, and related topics, and includes 71 figures and 135 algorithms great and small. Algorithms include: Gradient Ascent techniques, Hill-Climbing variants, Simulated Annealing, Tabu Search variants, Iterated Local Search, Evolution Strategies, the Genetic Algorithm, the Steady-State Genetic Algorithm, Differential Evolution, Particle Swarm Optimization, Genetic Programming variants, One- and Two-Population Competitive Coevolution, N-Population Cooperative Coevolution, Implicit Fitness Sharing, Deterministic Crowding, Nsga-Ii, Spea2, Grasp, Ant Colony Optimization variants, Guided Local Search, Lem, Pbil, Umda, cGa, Boa, Samuel, Zcs, Xcs, and Xcsf.
+
+# Algorithms for Optimization (The MIT Press)
+
+[Link to this book](https://www.amazon.com/Algorithms-Optimization-Press-Mykel-Kochenderfer/dp/0262039427/ref=as_li_ss_tl?dchild=1&keywords=Algorithms+for+Optimization&qid=1603227861&s=books&sr=1-1&linkCode=sl1&tag=inspiredalgor-20&linkId=3923344db63ce4c1c032e85cb08581d7&language=en_US)
+
+<p align="center">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/41-tvPh731L._SX440_BO1,204,203,200_.jpg" />
+</p>
+
+A comprehensive introduction to optimization with a focus on practical algorithms for the design of engineering systems.
+This book offers a comprehensive introduction to optimization with a focus on practical algorithms. The book approaches optimization from an engineering perspective, where the objective is to design a system that optimizes a set of metrics subject to constraints. Readers will learn about computational approaches for a range of challenges, including searching high-dimensional spaces, handling problems where there are multiple competing objectives, and accommodating uncertainty in the metrics. Figures, examples, and exercises convey the intuition behind the mathematical approaches. The text provides concrete implementations in the Julia programming language.
+
+Topics covered include derivatives and their generalization to multiple dimensions; local descent and first- and second-order methods that inform local descent; stochastic methods, which introduce randomness into the optimization process; linear constrained optimization, when both the objective function and the constraints are linear; surrogate models, probabilistic surrogate models, and using probabilistic surrogate models to guide optimization; optimization under uncertainty; uncertainty propagation; expression optimization; and multidisciplinary design optimization. Appendixes offer an introduction to the Julia language, test functions for evaluating algorithm performance, and mathematical concepts used in the derivation and analysis of the optimization methods discussed in the text. The book can be used by advanced undergraduates and graduate students in mathematics, statistics, computer science, any engineering field, (including electrical engineering and aerospace engineering), and operations research, and as a reference for professionals.
