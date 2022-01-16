@@ -219,6 +219,7 @@ W uczeniu statystycznym, statystycznym spojrzeniu na uczenie maszynowe, problem 
 jako uczenie funkcji odwzorowania (f) podane przykłady danych wejściowych (X) i powiązane
 dane wyjściowe (y).
 
+
 $$
 y = f(X)
 $$
