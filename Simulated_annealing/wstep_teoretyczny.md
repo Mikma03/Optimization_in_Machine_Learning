@@ -1,44 +1,64 @@
-
-
+<p style='text-align: justify;'>  
 
 # Spis tresci
+
+<p>&nbsp;</p>
 
 1. [Wstepne wyjasnienie](#Wstepne-wyjasnienie)
 
 2. [ Co to jest optymalizacja funkcji?](#Co-to-jest-optymalizacja-funkcji?)
 
-2.1. [Optymalizacja funkcji](#Optymalizacja-funkcji)
+    2.1. [Optymalizacja funkcji](#Optymalizacja-funkcji)
 
-2.2. [Rozwiązania dla kandydatów](#Rozwiązania-dla-kandydatów)
+    2.2. [Rozwiązania dla kandydatów](#Rozwiązania-dla-kandydatów)
 
-2.3. [Funkcje celu](#Funkcje-celu)
+    2.3. [Funkcje celu](#Funkcje-celu)
 
-2.4. [Koszty oceny](#Koszty-oceny)
+    2.4. [Koszty oceny](#Koszty-oceny)
 
 3. [Optymalizacja i uczenie maszynowe](#Optymalizacja-i-uczenie-maszynowe)
 
+    3.1. [Nauka jako optymalizacja](#Nauka-jako-optymalizacja)
+
+    3.2. [Optymalizacja w projekcie uczenia maszynowego](#Optymalizacja-w-projekcie-uczenia-maszynowego)
+
+    3.3. [Dostrajanie hiperparametrów jako optymalizacja](#Dostrajanie-hiperparametrów-jako-optymalizacja)
+
+    3.4. [Wybór modelu jako optymalizacja](#Wybór-modelu-jako-optymalizacja)
+
+4. [Jak wybrać optymalizację Algorytmy](#Jak-wybrać-optymalizację-Algorytmy)
+
+    4.1. [Różniczkowa funkcja celu](#Różniczkowa-funkcja-celu)
+
+    4.2. [Lokalne algorytmy zejścia](#Lokalne-algorytmy-zejścia)
+
+    4.3. [Algorytmy pierwszego rzędu](#Algorytmy-pierwszego-rzędu)
+
+    4.4. [Algorytmy drugiego rzędu](#Algorytmy-drugiego-rzędu)
+
+    4.5. [Nieróżnicowa funkcja celu](#Nieróżnicowa-funkcja-celu)
 
 
 
-
-
-
-
-
+<p>&nbsp;</p>
 
 # Wstepne wyjasnienie
 
+<p>&nbsp;</p>
+
 Poniewaz zakres teoretyczny jaki jest zwiazany z optymalizacja w projektach Machine Learningowych jest ogromny a same algogytmy potrafia byc w ciekawy sposob skomplikowane zdecydowalem sie zalaczyc wstepny opis teoretyczny.
+ Pozwoli to odseparowac czesc czystego kodu i obliczen od czesci teoretycznej, ktora moim zdaniem jest niezbedna.Projekt zaklada pokazanie i wyjasnienie algorytmu simulating annealing, dlatego znaczna czesc teorii bedzie dotyczyc wlasnie tego algorytmu, niemniej jednak spojrzenie z szerszej perspektywy wciaz jest dobry pomyslem.
 
-Pozwoli to odseparowac czesc czystego kodu i obliczen od czesci teoretycznej, ktora moim zdaniem jest niezbedna.
-
-Projekt zaklada pokazanie i wyjasnienie algorytmu simulating annealing, dlatego znaczna czesc teorii bedzie dotyczyc wlasnie tego algorytmu, niemniej jednak spojrzenie z szerszej perspektywy wciaz jest dobry pomyslem.
-
+<p>&nbsp;</p>
 
 # Co to jest optymalizacja funkcji?
 
+<p>&nbsp;</p>
+
 Optymalizacja funkcji jest podstawowym obszarem badań, a techniki są wykorzystywane prawie
 każde pole ilościowe. Co ważne, optymalizacja funkcji ma kluczowe znaczenie dla prawie wszystkich maszyn algorytmy uczenia się i projekty modelowania predykcyjnego. W związku z tym ważne jest, aby zrozumieć, co optymalizacji funkcji, terminologii stosowanej w tej dziedzinie oraz elementów, które składają się na problem optymalizacji funkcji. W tym samouczku odkryjesz delikatne wprowadzenie do optymalizacja funkcji. Po ukończeniu tego samouczka będziesz wiedzieć:
+
+<p>&nbsp;</p>
 
 * Trzy elementy optymalizacji funkcji jako rozwiązania kandydujące, funkcje celu,
 i koszt.
@@ -48,7 +68,11 @@ powierzchnia.
 
 * Różnica między optyma globalną a lokalną przy rozwiązywaniu problemu optymalizacji funkcji.
 
+<p>&nbsp;</p>
+
 ## Optymalizacja funkcji
+
+<p>&nbsp;</p>
 
 Optymalizacja funkcji jest poddziedziną matematyki, a w dzisiejszych czasach jest adresowana za pomocą metody obliczeń numerycznych. Optymalizacja funkcji ciągłej (w skrócie „optymalizacja funkcji”) należy do szerszej dziedziny nauki zwanej optymalizacją matematyczną. To jest
 odróżnia się od innych rodzajów optymalizacji, ponieważ polega na znalezieniu optymalnych rozwiązań kandydujących składa się z liczbowych zmiennych wejściowych, w przeciwieństwie do kandydujących rozwiązań złożonych z sekwencji
@@ -63,26 +87,33 @@ problem. W praktyce optymalizacja funkcji opisuje klasę problemów związanych 
 do danej funkcji, która powoduje minimalne lub maksymalne wyjście z funkcji.
 
 Optymalizacja funkcji obejmuje trzy elementy: dane wejściowe funkcji (np. x),
-samą funkcję celu (np. f(x)) i wyjście z funkcji (np. koszt, y).
+samą funkcję celu (np. $f(x))$ i wyjście z funkcji (np. koszt, y).
 
-* Dane wejściowe x: Dane wejściowe ocenianej funkcji, tj. potencjalne rozwiązanie.
+<p>&nbsp;</p>
 
-* Funkcja f(): Funkcja celu lub funkcja docelowa, która ocenia dane wejściowe.
+* Dane wejściowe $x$: Dane wejściowe ocenianej funkcji, tj. potencjalne rozwiązanie.
 
-* Koszt y: Wynik oceny kandydata na rozwiązanie z funkcją celu, zminimalizowane lub zmaksymalizowane.
+* Funkcja $f()$: Funkcja celu lub funkcja docelowa, która ocenia dane wejściowe.
 
+* Koszt $y$: Wynik oceny kandydata na rozwiązanie z funkcją celu, zminimalizowane lub zmaksymalizowane.
+
+<p>&nbsp;</p>
 
 ## Rozwiązania dla kandydatów
+
+<p>&nbsp;</p>
 
 Kandydujące rozwiązanie jest pojedynczym wejściem do funkcji celu. Forma rozwiązania kandydata
 zależy od specyfiki funkcji celu. Może to być pojedyncza liczba zmiennoprzecinkowa,
 wektor liczb, macierz liczb lub tak złożona, jak jest to konieczne dla konkretnego problemu
 domena. Najczęściej wektory liczb. W przypadku problemu testowego wektor reprezentuje
-określonych wartości każdej zmiennej wejściowej do funkcji (x = [x1, x2, x3, .. . , xn]). Do maszyny
+określonych wartości każdej zmiennej wejściowej do funkcji $(x = [x_1, x_2, x_3, .. . , x_n])$. Do maszyny
 model uczenia się, wektor może reprezentować współczynniki lub wagi modelu.
 
 Mogą istnieć ograniczenia nałożone przez dziedzinę problemu lub funkcję celu na
 rozwiązania kandydatów. Może to obejmować takie aspekty, jak:
+
+<p>&nbsp;</p>
 
 * Liczba zmiennych (1, 20, 1 000 000 itd.)
 
@@ -90,17 +121,27 @@ rozwiązania kandydatów. Może to obejmować takie aspekty, jak:
 
 * Zakres akceptowanych wartości (od 0 do 1 itd.)
 
+<p>&nbsp;</p>
+
 Co ważne, rozwiązania kandydackie są dyskretne i jest ich wiele. Wszechświat
 potencjalne rozwiązania mogą być rozległe, zbyt duże, by je wymienić. Zamiast tego najlepsze, co możemy zrobić, to próbować
 rozwiązania kandydatów w przestrzeni poszukiwań. Jako praktyk poszukujemy algorytmu optymalizacji
 który najlepiej wykorzystuje dostępne informacje o problemie do efektywnego próbkowania
 przestrzeni wyszukiwania i zlokalizuj dobre lub najlepsze rozwiązanie kandydata.
 
+<p>&nbsp;</p>
+
 * Przestrzeń wyszukiwania: Wszechświat proponowanych rozwiązań zdefiniowanych przez liczbę, typ i zakres przyjętych danych wejściowych do funkcji celu.
+
+<p>&nbsp;</p>
 
 Wreszcie, kandydujące rozwiązania można uszeregować w kolejności na podstawie ich oceny według celu funkcja, co oznacza, że ​​niektóre są lepsze od innych.
 
+<p>&nbsp;</p>
+
 ## Funkcje celu
+
+<p>&nbsp;</p>
 
 Funkcja celu jest specyficzna dla dziedziny problemowej. Może to być funkcja testowa, np. a
 znane równanie z określoną liczbą zmiennych wejściowych, których wyliczenie zwraca
@@ -111,6 +152,7 @@ do modelu i oceniając go w odniesieniu do części treningowego zestawu danych,
 ocena błędu, często nazywana utratą modelu. Funkcja celu jest łatwa do zdefiniowania, chociaż
 drogie do oceny. Efektywność optymalizacji funkcji odnosi się do minimalizacji liczby całkowitej
 ewaluacji funkcji.
+
 Chociaż funkcja celu jest łatwa do zdefiniowania, jej optymalizacja może być trudna. ten
 trudność funkcji celu może obejmować możliwość analitycznego rozwiązania funkcji
 bezpośrednio za pomocą rachunku różniczkowego lub algebry liniowej (łatwe), do lokalnego algorytmu wyszukiwania (umiarkowane),
@@ -135,8 +177,11 @@ funkcje celu oznaczają, że nie możemy analitycznie analizować powierzchni, a
 danych wejściowych i kosztów obliczeniowych ewaluacji funkcji sprawia, że mapowanie i wykreślanie staje się realne
 funkcje obiektywne niewykonalne.
 
+<p>&nbsp;</p>
 
 ## Koszty oceny
+
+<p>&nbsp;</p>
 
 Koszt rozwiązania kandydata to prawie zawsze jedna wartość rzeczywista. Skala
 wartości kosztów będą się różnić w zależności od specyfiki funkcji celu. Ogólnie jedyny
@@ -165,8 +210,11 @@ Całym celem projektu jest znalezienie konkretnego rozwiązania kandydata o dobr
 daj czas i dostępne zasoby. W prostych i umiarkowanych problemach możemy być w stanie:
 dokładnie zlokalizować optymalne rozwiązanie kandydata i mieć pewność, że to zrobiliśmy.
 
+<p>&nbsp;</p>
 
 # Optymalizacja i uczenie maszynowe
+
+<p>&nbsp;</p>
 
 Uczenie maszynowe polega na wykorzystaniu algorytmu do uczenia się i uogólniania danych historycznych w
 aby dokonywać prognoz na nowych danych. Ten problem można opisać jako przybliżenie a
@@ -199,6 +247,7 @@ rdzeniem prawie wszystkich algorytmów uczenia maszynowego jest algorytm optymal
 proces pracy nad problemem modelowania predykcyjnego obejmuje optymalizację na wielu
 kroki oprócz nauki modelu, w tym:
 
+<p>&nbsp;</p>
 
 * Wybór hiperparametrów modelu.
 
@@ -206,7 +255,11 @@ kroki oprócz nauki modelu, w tym:
 
 * Wybór potoku modelowania do użycia jako model ostateczny.
 
+<p>&nbsp;</p>
+
 ## Nauka jako optymalizacja
+
+<p>&nbsp;</p>
 
 Problemy z modelowaniem predykcyjnym obejmują prognozowanie na przykładzie danych wejściowych. Numeryczny
 ilość musi być przewidziana w przypadku problemu regresji, podczas gdy etykieta klasy musi
@@ -216,8 +269,8 @@ algorytm uczenia zastosowany do danych historycznych w celu uczenia się „prog
 które możemy wykorzystać do przewidywania nowych danych.
 
 W uczeniu statystycznym, statystycznym spojrzeniu na uczenie maszynowe, problem jest sformułowany
-jako uczenie funkcji odwzorowania (f) podane przykłady danych wejściowych (X) i powiązane
-dane wyjściowe (y).
+jako uczenie funkcji odwzorowania $(f)$ podane przykłady danych wejściowych $(X)$ i powiązane
+dane wyjściowe $(y)$.
 
 
 $$
@@ -279,7 +332,11 @@ najlepsze dopasowania do każdego nowego przykładu w celu dokonania prognozy.
 Teraz, gdy znamy uczenie się w algorytmach uczenia maszynowego jako optymalizację,
 spójrzmy na kilka powiązanych przykładów optymalizacji w projekcie uczenia maszynowego.
 
+<p>&nbsp;</p>
+
 ## Optymalizacja w projekcie uczenia maszynowego
+
+<p>&nbsp;</p>
 
 Optymalizacja odgrywa ważną rolę w projekcie uczenia maszynowego, oprócz dopasowania
 algorytm uczenia się na uczącym zbiorze danych. Etap przygotowania danych przed dopasowaniem
@@ -301,7 +358,11 @@ dane wejściowe funkcji to typy i kolejność przekształceń zastosowanych do d
 Liczba i permutacje przekształceń danych są zazwyczaj dość ograniczone i może być
 możliwość przeprowadzenia wyszukiwania wyczerpującego lub przeszukiwania siatki powszechnie używanych sekwencji.
 
-### Dostrajanie hiperparametrów jako optymalizacja
+<p>&nbsp;</p>
+
+## Dostrajanie hiperparametrów jako optymalizacja
+
+<p>&nbsp;</p>
 
 Algorytmy uczenia maszynowego mają hiperparametry, które można skonfigurować w celu dostosowania algorytmu
 do określonego zbioru danych. Chociaż dynamika wielu hiperparametrów jest znana, specyficzna
@@ -319,7 +380,12 @@ Jest to pożądane, ponieważ ocena pojedynczej kombinacji hiperparametrów mode
 wymagające dopasowania modelu do całego zestawu danych treningowych jedno lub wielokrotnie, w zależności od
 wybór procedury oceny modelu (np. powtórna k-krotna walidacja krzyżowa).
 
+<p>&nbsp;</p>
+
 ## Wybór modelu jako optymalizacja
+
+
+<p>&nbsp;</p>
 
 Wybór modelu polega na wyborze jednego z wielu kandydujących modeli uczenia maszynowego do
 problem modelowania predykcyjnego. Tak naprawdę polega to na wyborze algorytmu uczenia maszynowego lub
@@ -341,7 +407,11 @@ takich jak Google, Microsoft i Amazon. Chociaż szybkie i wydajne, takie podejś
 nie mogąc przewyższyć ręcznie wykonanych modeli przygotowanych przez wysoko wykwalifikowanych ekspertów, takich jak te
 udział w konkursach uczenia maszynowego.
 
+<p>&nbsp;</p>
+
 # Jak wybrać optymalizację Algorytmy
+
+<p>&nbsp;</p>
 
 Optymalizacja to problem ze znalezieniem zestawu danych wejściowych do funkcji celu, którego wynikiem jest a
 maksymalna lub minimalna ocena funkcji. Jest to trudny problem, który leży u podstaw wielu
@@ -350,7 +420,11 @@ sieci. Istnieje prawdopodobnie setki popularnych algorytmów optymalizacyjnych, 
 algorytmy do wyboru w popularnonaukowych bibliotekach kodów. Może to sprawić, że trudno będzie
 wiedzieć, które algorytmy wziąć pod uwagę dla danego problemu optymalizacyjnego.
 
+<p>&nbsp;</p>
+
 ## Różniczkowa funkcja celu
+
+<p>&nbsp;</p>
 
 Funkcja różniczkowalna
 jest funkcją, w której pochodną można obliczyć dla dowolnego podanego
@@ -358,16 +432,12 @@ punkt w przestrzeni wejściowej. Pochodną funkcji dla wartości jest stopa lub 
 w funkcji w tym momencie. Często nazywany jest stokiem.
 
 Pochodna funkcji z więcej niż jedną zmienną wejściową (np. wielowymiarowe dane wejściowe) to
-powszechnie nazywany gradientem.
-
-Pochodną wielowymiarowej funkcji celu jest wektor, a każdy element wektora to
+powszechnie nazywany gradientem. Pochodną wielowymiarowej funkcji celu jest wektor, a każdy element wektora to
 nazywana pochodną cząstkową, czyli stopą zmian dla danej zmiennej w punkcie zakładając wszystkie
 inne zmienne są utrzymywane na stałym poziomie.
 
 Możemy obliczyć pochodną pochodnej funkcji celu, czyli stopę
-zmiana tempa zmiany funkcji celu. Nazywa się to drugą pochodną.
-
-W przypadku funkcji, która przyjmuje wiele zmiennych wejściowych, jest to macierz i jest określana jako
+zmiana tempa zmiany funkcji celu. Nazywa się to drugą pochodną. W przypadku funkcji, która przyjmuje wiele zmiennych wejściowych, jest to macierz i jest określana jako
 Macierz Hesja.
 
 Proste funkcje różniczkowe można optymalizować analitycznie za pomocą rachunku różniczkowego. Zazwyczaj
@@ -375,6 +445,8 @@ interesujących nas funkcji obiektywnych nie da się rozwiązać analitycznie. O
 znacznie łatwiej, jeśli można obliczyć gradient funkcji celu i jako taki istnieje
 o wiele więcej badań nad algorytmami optymalizacji wykorzystującymi pochodną niż te
 to nie. Niektóre grupy algorytmów wykorzystujących informacje o gradientach obejmują:
+
+<p>&nbsp;</p>
 
 * Algorytmy braketingu
 
@@ -384,19 +456,26 @@ to nie. Niektóre grupy algorytmów wykorzystujących informacje o gradientach o
 
 * Algorytmy drugiego rzędu
 
-### Lokalne algorytmy zejścia
+<p>&nbsp;</p>
+
+## Lokalne algorytmy zejścia
+
+<p>&nbsp;</p>
 
 Algorytmy optymalizacji zniżania lokalnego są przeznaczone do rozwiązywania problemów optymalizacyjnych z więcej niż
 jedna zmienna wejściowa i jedna globalna optima (np. unimodalna funkcja celu). Możliwe że
 najczęstszym przykładem lokalnego algorytmu opadania jest algorytm wyszukiwania linii.
-
 Istnieje wiele odmian wyszukiwania wierszy (np. algorytm Brenta-Dekkera), ale procedura
 zazwyczaj polega na wybraniu kierunku poruszania się w przestrzeni wyszukiwania, a następnie wykonaniu nawiasów
 wpisz search w linii lub hiperpłaszczyźnie w wybranym kierunku. Ten proces jest powtarzany aż do nie
 można dokonać dalszych ulepszeń. Ograniczeniem jest to, że jest to obliczeniowo kosztowne, aby
 zoptymalizuj każdy ruch kierunkowy w przestrzeni wyszukiwania.
 
-### Algorytmy pierwszego rzędu
+<p>&nbsp;</p>
+
+## Algorytmy pierwszego rzędu
+
+<p>&nbsp;</p>
 
 Algorytmy optymalizacji pierwszego rzędu wyraźnie obejmują użycie pierwszej pochodnej (gradientu) do
 wybierz kierunek poruszania się w przestrzeni wyszukiwania. Procedury obejmują najpierw obliczenie
@@ -409,11 +488,15 @@ zbyt duża spowoduje zygzakowanie lub podskakiwanie po przestrzeni wyszukiwania,
 optymalna całkowicie. Algorytmy pierwszego rzędu są ogólnie określane jako opadanie gradientowe, przy czym
 bardziej szczegółowe nazwy odnoszące się do drobnych rozszerzeń procedury, np.:
 
+<p>&nbsp;</p>
+
 * Gradient Spadek
 * Pęd
 * Adagrad
 * RMSPPro
 * Adam
+
+<p>&nbsp;</p>
 
 Algorytm opadania gradientu zapewnia również szablon dla popularnej wersji stochastycznej
 algorytmu o nazwie Stochastic Gradient Descent (SGD), który służy do treningu sztucznego
@@ -423,21 +506,30 @@ jedna próbka (stochastyczna), wszystkie przykłady (partia) lub mały podzbiór
 Rozszerzenia zaprojektowane w celu przyspieszenia algorytmu opadania gradientu (pędu itp.) mogą być
 i są powszechnie używane z SGD.
 
+<p>&nbsp;</p>
+
 * Stochastyczne opadanie gradientowe
 * Partia Gradient Spadek
 * Minipartia Gradient Descent
 
+<p>&nbsp;</p>
 
-### Algorytmy drugiego rzędu
+## Algorytmy drugiego rzędu
+
+<p>&nbsp;</p>
 
 Algorytmy optymalizacji drugiego rzędu wyraźnie wykorzystują drugą pochodną (hessian)
 aby wybrać kierunek poruszania się w przestrzeni wyszukiwania. Te algorytmy są tylko odpowiednie
 dla tych funkcji celu, dla których można obliczyć lub przybliżyć macierz Hess.
 Przykłady algorytmów optymalizacji drugiego rzędu dla jednowymiarowych funkcji celu obejmują:
 
+<p>&nbsp;</p>
+
 * Metoda Newtona
 
 * Metoda siecznej 
+
+<p>&nbsp;</p>
 
 Metody drugiego rzędu dla wielowymiarowych funkcji celu są określane jako Quasi-Newton
 Metody.
@@ -446,23 +538,32 @@ Metoda quasi-Newtona
 Istnieje wiele metod quasi-Newtona i są one zazwyczaj nazywane imieniem twórców
 algorytm, taki jak:
 
+<p>&nbsp;</p>
+
 * Davidson-Fletcher-Powell
 
 * Broyden-Fletcher-Goldfarb-Shanno (BFGS)
 
 * BFGS o ograniczonej pamięci (L-BFGS)
 
+<p>&nbsp;</p>
+
 Teraz, gdy znamy już tak zwane klasyczne algorytmy optymalizacji, spójrzmy na:
 algorytmy stosowane, gdy funkcja celu nie jest różniczkowalna.
 
+<p>&nbsp;</p>
+
 ## Nieróżnicowa funkcja celu
+
+<p>&nbsp;</p>
 
 Algorytmy optymalizacyjne wykorzystujące pochodną funkcji celu są szybkie i
 wydajny. Niemniej jednak istnieją funkcje obiektywne, w przypadku których nie można obliczyć pochodnej,
 zazwyczaj dlatego, że funkcja jest złożona z różnych rzeczywistych powodów. Lub pochodna
-można obliczyć w niektórych regionach domeny, ale nie we wszystkich lub nie jest dobrym przewodnikiem. Niektóre
-trudności z funkcjami celu dla klasycznych algorytmów opisanych w poprzednim rozdziale
+można obliczyć w niektórych regionach domeny, ale nie we wszystkich lub nie jest dobrym przewodnikiem. Niektóre trudności z funkcjami celu dla klasycznych algorytmów opisanych w poprzednim rozdziale
 włączać:
+
+<p>&nbsp;</p>
 
 * Brak opisu analitycznego funkcji (np. symulacja).
 
@@ -471,3 +572,6 @@ włączać:
 * Ocena funkcji stochastycznej (np. zaszumienie).
 
 * Nieciągła funkcja celu (np. regiony z nieprawidłowymi rozwiązaniami).
+
+
+</p>
