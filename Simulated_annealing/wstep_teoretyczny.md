@@ -5,6 +5,22 @@
 
 1. [Wstepne wyjasnienie](#Wstepne-wyjasnienie)
 
+2. [ Co to jest optymalizacja funkcji?](#Co-to-jest-optymalizacja-funkcji?)
+
+2.1. [Optymalizacja funkcji](#Optymalizacja-funkcji)
+
+2.2. [Rozwiązania dla kandydatów](#Rozwiązania-dla-kandydatów)
+
+2.3. [Funkcje celu](#Funkcje-celu)
+
+2.4. [Koszty oceny](#Koszty-oceny)
+
+3. [Optymalizacja i uczenie maszynowe](#Optymalizacja-i-uczenie-maszynowe)
+
+
+
+
+
 
 
 
@@ -204,9 +220,7 @@ jako uczenie funkcji odwzorowania (f) podane przykłady danych wejściowych (X) 
 dane wyjściowe (y).
 
 $$
-
 y = f(X)
-
 $$
 
 Wyuczone mapowanie będzie niedoskonałe. Żaden model nie jest doskonały, a pewien błąd przewidywania to
