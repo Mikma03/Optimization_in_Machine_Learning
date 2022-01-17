@@ -1,5 +1,6 @@
 # Table of contents
 
+<p>&nbsp;</p>
 
 1. [Books explaining optimization](#Books-explaining-optimization)
 
@@ -10,8 +11,11 @@
 4. [Hands-On Genetic Algorithms with Python](#Hands-On-Genetic-Algorithms-with-Python)
 
 
+<p>&nbsp;</p>
+
 # Books explaining optimization
 
+<p>&nbsp;</p>
 
 This section will be dedicated to showing you books that explain optimization concepts well and are available for purchase or download.
 
@@ -25,6 +29,7 @@ Books are available in a modern form, i.e. text plus working codes in a given la
 * [Oreilly](https://learning.oreilly.com/home/)
 
 
+<p>&nbsp;</p>
 
 # Optimization for Machine Learning
 
