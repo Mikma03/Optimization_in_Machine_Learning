@@ -28,13 +28,12 @@ Tryb studiow: Zaoczne: sobotnio-niedzielne
 
 1. [Wystepne wymagania](#Wystepne-wymagania)
 
-1.1. [Srodowisko wirtualne](#Srodowisko-wirtualne)
 
-1.2. [Srodowisko wirtualne](#Srodowisko-wirtualne)
+    1.1. [Srodowisko wirtualne](#Srodowisko-wirtualne)
 
-1.3. [Terminal](#Terminal)
+    1.3. [Terminal](#Terminal)
 
-1.4. [Plik gitignore](#Plik-gitignore)
+    1.4. [Plik gitignore](#Plik-gitignore)
 
 <p>&nbsp;</p>
 

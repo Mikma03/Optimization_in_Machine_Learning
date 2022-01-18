@@ -38,6 +38,11 @@
 
     4.5. [Nieróżnicowa funkcja celu](#Nieróżnicowa-funkcja-celu)
 
+    4.6. [Algorytmy bezpośrednie](#Algorytmy-ezpośrednie)
+
+    4.7. [Algorytmy stochastyczne](#Algorytmy-stochastyczne)
+
+    4.8. [Algorytmy populacyjne](#Algorytmy-populacyjne)
 
 
 <p>&nbsp;</p>
@@ -47,7 +52,8 @@
 <p>&nbsp;</p>
 
 Poniewaz zakres teoretyczny jaki jest zwiazany z optymalizacja w projektach Machine Learningowych jest ogromny a same algogytmy potrafia byc w ciekawy sposob skomplikowane zdecydowalem sie zalaczyc wstepny opis teoretyczny.
- Pozwoli to odseparowac czesc czystego kodu i obliczen od czesci teoretycznej, ktora moim zdaniem jest niezbedna.Projekt zaklada pokazanie i wyjasnienie algorytmu simulating annealing, dlatego znaczna czesc teorii bedzie dotyczyc wlasnie tego algorytmu, niemniej jednak spojrzenie z szerszej perspektywy wciaz jest dobry pomyslem.
+
+Pozwoli to odseparowac czesc czystego kodu i obliczen od czesci teoretycznej, ktora moim zdaniem jest niezbedna.Projekt zaklada pokazanie i wyjasnienie algorytmu simulating annealing, dlatego znaczna czesc teorii bedzie dotyczyc wlasnie tego algorytmu, niemniej jednak spojrzenie z szerszej perspektywy wciaz jest dobry pomyslem.
 
 <p>&nbsp;</p>
 
@@ -55,10 +61,14 @@ Poniewaz zakres teoretyczny jaki jest zwiazany z optymalizacja w projektach Mach
 
 <p>&nbsp;</p>
 
-Optymalizacja funkcji jest podstawowym obszarem badań, a techniki są wykorzystywane prawie
-każde pole ilościowe. Co ważne, optymalizacja funkcji ma kluczowe znaczenie dla prawie wszystkich maszyn algorytmy uczenia się i projekty modelowania predykcyjnego. W związku z tym ważne jest, aby zrozumieć, co optymalizacji funkcji, terminologii stosowanej w tej dziedzinie oraz elementów, które składają się na problem optymalizacji funkcji. W tym samouczku odkryjesz delikatne wprowadzenie do optymalizacja funkcji. Po ukończeniu tego samouczka będziesz wiedzieć:
+Optymalizacja funkcji jest podstawowym obszarem badań a techniki są wykorzystywane w prawie
+każdym polu ilościowym. Co ważne, optymalizacja funkcji ma kluczowe znaczenie dla prawie wszystkich algorytmow uczenia maszynowego i projektow modelowania predykcyjnego. 
+
+W związku z tym ważne jest, aby zrozumieć terminologie oraz zasady dzialania juz na samym pocztaku.
+
 
 <p>&nbsp;</p>
+
 
 * Trzy elementy optymalizacji funkcji jako rozwiązania kandydujące, funkcje celu,
 i koszt.
