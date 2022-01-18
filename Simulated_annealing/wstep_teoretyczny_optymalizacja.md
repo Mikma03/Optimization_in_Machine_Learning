@@ -6,7 +6,7 @@
 
 1. [Wstepne wyjasnienie](#Wstepne-wyjasnienie)
 
-2. [ Co to jest optymalizacja funkcji?](#Co-to-jest-optymalizacja-funkcji?)
+2. [Co to jest optymalizacja funkcji?](#Co-to-jest-optymalizacja-funkcji?)
 
     2.1. [Optymalizacja funkcji](#Optymalizacja-funkcji)
 
@@ -22,7 +22,7 @@
 
     3.2. [Wybór modelu jako optymalizacja](#Wybór-modelu-jako-optymalizacja)
 
-4. [Jak wybrać optymalizację Algorytmy](#Jak-wybrać-optymalizację-Algorytmy)
+4. [Jak wybrać algorytmy optymalizacji](#Jak-wybrać-algorytmy-optymalizacji)
 
     4.1. [Algorytmy pierwszego rzędu](#Algorytmy-pierwszego-rzędu)
 
