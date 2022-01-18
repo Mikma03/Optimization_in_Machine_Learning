@@ -18,31 +18,21 @@
 
 3. [Optymalizacja i uczenie maszynowe](#Optymalizacja-i-uczenie-maszynowe)
 
-    3.1. [Nauka jako optymalizacja](#Nauka-jako-optymalizacja)
+    3.1. [Dostrajanie hiperparametrów jako optymalizacja](#Dostrajanie-hiperparametrów-jako-optymalizacja)
 
-    3.2. [Optymalizacja w projekcie uczenia maszynowego](#Optymalizacja-w-projekcie-uczenia-maszynowego)
-
-    3.3. [Dostrajanie hiperparametrów jako optymalizacja](#Dostrajanie-hiperparametrów-jako-optymalizacja)
-
-    3.4. [Wybór modelu jako optymalizacja](#Wybór-modelu-jako-optymalizacja)
+    3.2. [Wybór modelu jako optymalizacja](#Wybór-modelu-jako-optymalizacja)
 
 4. [Jak wybrać optymalizację Algorytmy](#Jak-wybrać-optymalizację-Algorytmy)
 
-    4.1. [Różniczkowa funkcja celu](#Różniczkowa-funkcja-celu)
+    4.1. [Algorytmy pierwszego rzędu](#Algorytmy-pierwszego-rzędu)
 
-    4.2. [Lokalne algorytmy zejścia](#Lokalne-algorytmy-zejścia)
+    4.2. [Algorytmy drugiego rzędu](#Algorytmy-drugiego-rzędu)
 
-    4.3. [Algorytmy pierwszego rzędu](#Algorytmy-pierwszego-rzędu)
+    4.3. [Algorytmy bezpośrednie](#Algorytmy-ezpośrednie)
 
-    4.4. [Algorytmy drugiego rzędu](#Algorytmy-drugiego-rzędu)
+    4.4. [Algorytmy stochastyczne](#Algorytmy-stochastyczne)
 
-    4.5. [Nieróżnicowa funkcja celu](#Nieróżnicowa-funkcja-celu)
-
-    4.6. [Algorytmy bezpośrednie](#Algorytmy-ezpośrednie)
-
-    4.7. [Algorytmy stochastyczne](#Algorytmy-stochastyczne)
-
-    4.8. [Algorytmy populacyjne](#Algorytmy-populacyjne)
+    4.4. [Algorytmy populacyjne](#Algorytmy-populacyjne)
 
 
 <p>&nbsp;</p>
