@@ -3,15 +3,16 @@
 
 <p>&nbsp;</p>
 
-Realizacja projektu, ktory ma na celu wyjasnienie oraz demonstracje algorytmu sluzacemu do optymalizacji: simulating annealing. 
+Realizacja projektu, który ma na celu wyjasnienie oraz demonstracje algorytmu sluzacego do optymalizacji: simulating annealing. 
 Autor projektu zdecydowal sie na zastosowanie pewnych konwencji aby rozszerzyc merytorycznie projekt. 
 
-Na samym pocztaku zostanie przedstawiony program pipenv oraz terminal PowerShell w celu ulatwienia pracy osobom ktore beda chcialy zainsralowac i pobrac folder z tym projektem.
+Na samym pocztaku zostanie przedstawiony program pipenv oraz terminal PowerShell w celu ulatwienia pracy osobom, ktore beda chcialy zainstalowac i pobrac folder z tym projektem.
 
 Ponadto aby dobrze zademonstrowac zagadnienie jakim jest optymalizacja w dziedzinie Machine Learningu zostanie zawarty wstep teoretyczny.
 
 
 Autor: Mikołaj Maślanka
+
 Numer albumu
 Email:
 Telefon:
@@ -60,10 +61,10 @@ Dodatkowe informacje na temat zainstalowanych bibliotek zjanduja sie w pliku `pi
 
 <p>&nbsp;</p>
 
-Na samym początku od strony technicznej zoatalo stworzone srodowisko wirtualne tak aby projekt byl replikowalny na komputerze odbircy / osoby replikujacej.
-W tym celu zostal wykorzystany program do zarzadzania srodowiskiem wirtualny `pipenv`. Wygodny interfesj oraz latwosc obslugi byly tu przewazajacymi argumentami.
+Na samym początku, od strony technicznej zostalo stworzone srodowisko wirtualne tak, aby projekt byl replikowalny na komputerze odbiorcy / osoby replikujacej.
+W tym celu zostal wykorzystany program do zarzadzania srodowiskiem wirtualny `pipenv`. Wygodny interfejs oraz latwosc obslugi byly tu przewazajacymi argumentami.
 
-Aby zainstalować `pipenv` na lokalnym komputerze lub serwerze tudziez klastrze nalezy wykonac (dla systemu Windows):
+Aby zainstalować `pipenv` na lokalnym komputerze lub serwerze, tudziez klastrze nalezy wykonac (dla systemu Windows):
 <p>&nbsp;</p>
 
 > `pip install pipenv`
@@ -74,7 +75,7 @@ Powyzszy program instaluje sie w globalnym interpreterze jezyka Python dlatego n
 
 Ponadto `pipenv` stworzy automatycznie dwa pliki: `pipfile.lock` oraz `pipfile` - w tych dwoch plikach znajduja sie wszytkie wykorzystane biblioteki oraz wersja jezyka Python.
 
-Dzięki temu że pliki te automatycznie sie aktualizuja zyskujemy mozliwosc kontrolowania zaleznosci deweloperskich oraz produkcyjnych.
+Dzięki temu, że pliki te automatycznie sie aktualizuja, zyskujemy mozliwosc kontrolowania zaleznosci deweloperskich oraz produkcyjnych.
 
 <p>&nbsp;</p>
 
@@ -122,9 +123,9 @@ Aby usunac srodowisko wirtualne nalezy:
 <p>&nbsp;</p>
 
 Podczas realizacji projektu byl wykorzystywany system Windows i to na nim odbywaly sie wszytkie obliczenia zwiazane z kodem Python. 
-Dodatkowo wszytkie profilowania kodu byly rowniez wykonywane z pomoca komend ktore sa tozsame dla systemu Windows.
+Wszytkie profilowania kodu byly rowniez wykonywane z pomoca komend, ktore sa tozsame dla systemu Windows.
 
-Jako zintegrowany terminal systemowy zostal wykorzystany PowerShell  w wersji 7.2.1
+Jako zintegrowany terminal systemowy zostal wykorzystany PowerShell  w wersji 7.2.1,
 
 Aby sprawdzić jakiej wersji używa się aktualnie na swoim komputerze należy wykonać w terminalu:
 
@@ -139,8 +140,8 @@ Aby sprawdzić jakiej wersji używa się aktualnie na swoim komputerze należy w
 
 <p>&nbsp;</p>
 
-Jako, że projekt wykonuje z uzycie narzedzia Visual Studio Code oraz dodatkowo wykorzystuje kontrole wersji - program Git - oraz projekt jezt napisany w jezyku Pytho, to konieczne wydaje sie byc zalaczenie pliku .gitignore.
+Jako, że projekt wykonany został z uzyciem narzedzia Visual Studio Code oraz dodatkowo wykorzystano kontrole wersji - program Git - oraz projekt napisano w jezyku Python, to konieczne wydaje sie byc zalaczenie pliku .gitignore.
 
-Docelowo bedzie napisana wersja anglojezyczna niniejszego projektu a w dalszej kolejnosci bedzie stworzone repozytorium na GitHubie.
+Docelowo bedzie napisana wersja anglojezyczna niniejszego projektu, a w dalszej kolejnosci bedzie stworzone repozytorium na GitHubie.
 
-Plik .gitignore zawiera zakres typowych plikow ktore sa ignorowane w przypadku pracy projektowe w jezyku Python.
+Plik .gitignore zawiera zakres typowych plikow, ktore sa ignorowane w przypadku pracy projektowej w jezyku Python.
