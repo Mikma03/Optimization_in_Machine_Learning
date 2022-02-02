@@ -26,7 +26,6 @@ Jeśli nowy punkt jest lepszy niż obecny, to aktualny punkt jest zastępowany n
 Główna różnica polega na tym, że nowe punkty czasami nie są tak dobre jak aktualne punkty, co prowadzi do akceptacji. 
 
 Gorszy punkt jest akceptowany probabilistycznie, gdzie prawdopodobieństwo zaakceptowania rozwiązania gorszego od obecnego jest funkcją
-temperatury wyszukiwania.
 
 <p>&nbsp;</p>
 
@@ -46,7 +45,7 @@ Na podstawie tych informacji oblicza się wartość od 0 do 1, wskazując prawdo
 
 <p>&nbsp;</p>
 
-Nazywa się to kryterium akceptacji metropolii i dla minimalizacji oblicza się jako:
+dla minimalizacji oblicza się jako:
 
 $$criterion = exp(-\frac{objective(new) − objective(current)
 }{temperature})$$
