@@ -8,7 +8,7 @@
 
 Ta czesc tego repozytorium jest w jezyku polskim ze wzgledu na to iz jest to realizacja pewnego projektu na studia drugiego stopnia na SGH.
 
-Docelowo to co zostalo zapisane w jezyku polskim zostanie przetlumaczone na jezyk angielksi.
+Docelowo to co zostalo zapisane w jezyku polskim zostanie przetlumaczone na jezyk angielski.
 
 Niemniej jednak czesc kodow w pliku **simulated_annealing_implementation** zostala napisana z wykorzystaniem wyrazen algojezycznych oraz komentarze rowniez sa po angielsku. Wynika to z faktu, ze kod powinien byc czytelny dla kazdego, teorie natomiast mozna zawsze znalezc w internecie.
 
