@@ -31,26 +31,6 @@ Books are available in a modern form, i.e. text plus working codes in a given la
 
 <p>&nbsp;</p>
 
-# Optimization for Machine Learning
-
-
-[Link to this book](https://machinelearningmastery.com/optimization-for-machine-learning/)
-
-<p align="center">
-  <img src="https://machinelearningmastery.com/wp-content/uploads/2021/09/OptimizationForMachineLearning-400.png" />
-</p>
-
-
-The ability to apply function optimization freely allows us to go to a new level in various stages of machine learning. We may find better models by hyperparameter tuning. We may also produce better input data by feature selection in preprocessing stage.
-
-Machine learning is doing a lot of optimization behind the scenes. When new algorithm invented or new technique proposed, it is inevitable to explain them in terms of optimization. Hence we also need to understand them from optimization perspectives.
-
-This book was carefully designed to help you bring a wide variety of the proven and powerful optimization algorithms to your next project.
-
-The tutorials were designed to teach you these techniques the fastest and most effective way that I know how: to learn by doing. With executable code that you can run to develop the intuitions required, and that you can copy-and-paste into your project and immediately get a result.
-
-Function optimization is important to machine learning, and I believe that if it is taught at the right level for practitioners, it can be a fascinating, fun, directly applicable, and immeasurably useful toolbox of techniques.
-
 
 
 # Adaptive Stochastic Optimization Techniques with Applications
