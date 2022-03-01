@@ -15,6 +15,32 @@
 
 # Books explaining optimization
 
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+# Optimization for Machine Learning
+
+
+[Link to this book](https://machinelearningmastery.com/optimization-for-machine-learning/)
+
+<p align="center">
+  <img src="https://machinelearningmastery.com/wp-content/uploads/2021/09/OptimizationForMachineLearning-400.png" />
+</p>
+
+
+The ability to apply function optimization freely allows us to go to a new level in various stages of machine learning. We may find better models by hyperparameter tuning. We may also produce better input data by feature selection in preprocessing stage.
+
+Machine learning is doing a lot of optimization behind the scenes. When new algorithm invented or new technique proposed, it is inevitable to explain them in terms of optimization. Hence we also need to understand them from optimization perspectives.
+
+This book was carefully designed to help you bring a wide variety of the proven and powerful optimization algorithms to your next project.
+
+The tutorials were designed to teach you these techniques the fastest and most effective way that I know how: to learn by doing. With executable code that you can run to develop the intuitions required, and that you can copy-and-paste into your project and immediately get a result.
+
+Function optimization is important to machine learning, and I believe that if it is taught at the right level for practitioners, it can be a fascinating, fun, directly applicable, and immeasurably useful toolbox of techniques.
+
+
 <p>&nbsp;</p>
 
 This section will be dedicated to showing you books that explain optimization concepts well and are available for purchase or download.
@@ -117,3 +143,5 @@ A comprehensive introduction to optimization with a focus on practical algorithm
 This book offers a comprehensive introduction to optimization with a focus on practical algorithms. The book approaches optimization from an engineering perspective, where the objective is to design a system that optimizes a set of metrics subject to constraints. Readers will learn about computational approaches for a range of challenges, including searching high-dimensional spaces, handling problems where there are multiple competing objectives, and accommodating uncertainty in the metrics. Figures, examples, and exercises convey the intuition behind the mathematical approaches. The text provides concrete implementations in the Julia programming language.
 
 Topics covered include derivatives and their generalization to multiple dimensions; local descent and first- and second-order methods that inform local descent; stochastic methods, which introduce randomness into the optimization process; linear constrained optimization, when both the objective function and the constraints are linear; surrogate models, probabilistic surrogate models, and using probabilistic surrogate models to guide optimization; optimization under uncertainty; uncertainty propagation; expression optimization; and multidisciplinary design optimization. Appendixes offer an introduction to the Julia language, test functions for evaluating algorithm performance, and mathematical concepts used in the derivation and analysis of the optimization methods discussed in the text. The book can be used by advanced undergraduates and graduate students in mathematics, statistics, computer science, any engineering field, (including electrical engineering and aerospace engineering), and operations research, and as a reference for professionals.
+
+
