@@ -2,23 +2,35 @@
 
 <p>&nbsp;</p>
 
-1. [Books explaining optimization](#Books-explaining-optimization)
+<!-- TOC -->
 
-2. [Optimization for Machine Learning](#Optimization-for-Machine-Learning)
+- [Table of contents](#table-of-contents)
+- [Algorithms for Optimization The MIT Press](#algorithms-for-optimization-the-mit-press)
+- [Optimization for Machine Learning](#optimization-for-machine-learning)
+- [Adaptive Stochastic Optimization Techniques with Applications](#adaptive-stochastic-optimization-techniques-with-applications)
+- [Hands-On Genetic Algorithms with Python](#hands-on-genetic-algorithms-with-python)
+- [Numerical Optimization Springer Series in Operations Research and Financial Engineering](#numerical-optimization-springer-series-in-operations-research-and-financial-engineering)
+- [Introduction to Stochastic Search and Optimization](#introduction-to-stochastic-search-and-optimization)
+- [Essentials of Metaheuristics Second Edition](#essentials-of-metaheuristics-second-edition)
 
-3. [Adaptive Stochastic Optimization Techniques with Applications](#Adaptive-Stochastic-Optimization-Techniques-with-Applications)
+<!-- /TOC -->
 
-4. [Hands-On Genetic Algorithms with Python](#Hands-On-Genetic-Algorithms-with-Python)
-
-
-<p>&nbsp;</p>
-
-# Books explaining optimization
-
-
-<p>&nbsp;</p>
 
 <p>&nbsp;</p>
+
+# Algorithms for Optimization (The MIT Press)
+
+[Link to this book](https://www.amazon.com/Algorithms-Optimization-Press-Mykel-Kochenderfer/dp/0262039427/ref=as_li_ss_tl?dchild=1&keywords=Algorithms+for+Optimization&qid=1603227861&s=books&sr=1-1&linkCode=sl1&tag=inspiredalgor-20&linkId=3923344db63ce4c1c032e85cb08581d7&language=en_US)
+
+<p align="center">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/41-tvPh731L._SX440_BO1,204,203,200_.jpg" />
+</p>
+
+A comprehensive introduction to optimization with a focus on practical algorithms for the design of engineering systems.
+This book offers a comprehensive introduction to optimization with a focus on practical algorithms. The book approaches optimization from an engineering perspective, where the objective is to design a system that optimizes a set of metrics subject to constraints. Readers will learn about computational approaches for a range of challenges, including searching high-dimensional spaces, handling problems where there are multiple competing objectives, and accommodating uncertainty in the metrics. Figures, examples, and exercises convey the intuition behind the mathematical approaches. The text provides concrete implementations in the Julia programming language.
+
+Topics covered include derivatives and their generalization to multiple dimensions; local descent and first- and second-order methods that inform local descent; stochastic methods, which introduce randomness into the optimization process; linear constrained optimization, when both the objective function and the constraints are linear; surrogate models, probabilistic surrogate models, and using probabilistic surrogate models to guide optimization; optimization under uncertainty; uncertainty propagation; expression optimization; and multidisciplinary design optimization. Appendixes offer an introduction to the Julia language, test functions for evaluating algorithm performance, and mathematical concepts used in the derivation and analysis of the optimization methods discussed in the text. The book can be used by advanced undergraduates and graduate students in mathematics, statistics, computer science, any engineering field, (including electrical engineering and aerospace engineering), and operations research, and as a reference for professionals.
+
 
 # Optimization for Machine Learning
 
@@ -131,17 +143,5 @@ Introduction to Stochastic Search and Optimization: Estimation, Simulation, and 
 
 Essentials of Metaheuristics covers these and other metaheuristics algorithms, and is intended for undergraduate students, programmers, and non-experts. The book covers a wide range of algorithms, representations, selection and modification operators, and related topics, and includes 71 figures and 135 algorithms great and small. Algorithms include: Gradient Ascent techniques, Hill-Climbing variants, Simulated Annealing, Tabu Search variants, Iterated Local Search, Evolution Strategies, the Genetic Algorithm, the Steady-State Genetic Algorithm, Differential Evolution, Particle Swarm Optimization, Genetic Programming variants, One- and Two-Population Competitive Coevolution, N-Population Cooperative Coevolution, Implicit Fitness Sharing, Deterministic Crowding, Nsga-Ii, Spea2, Grasp, Ant Colony Optimization variants, Guided Local Search, Lem, Pbil, Umda, cGa, Boa, Samuel, Zcs, Xcs, and Xcsf.
 
-# Algorithms for Optimization (The MIT Press)
-
-[Link to this book](https://www.amazon.com/Algorithms-Optimization-Press-Mykel-Kochenderfer/dp/0262039427/ref=as_li_ss_tl?dchild=1&keywords=Algorithms+for+Optimization&qid=1603227861&s=books&sr=1-1&linkCode=sl1&tag=inspiredalgor-20&linkId=3923344db63ce4c1c032e85cb08581d7&language=en_US)
-
-<p align="center">
-  <img src="https://images-na.ssl-images-amazon.com/images/I/41-tvPh731L._SX440_BO1,204,203,200_.jpg" />
-</p>
-
-A comprehensive introduction to optimization with a focus on practical algorithms for the design of engineering systems.
-This book offers a comprehensive introduction to optimization with a focus on practical algorithms. The book approaches optimization from an engineering perspective, where the objective is to design a system that optimizes a set of metrics subject to constraints. Readers will learn about computational approaches for a range of challenges, including searching high-dimensional spaces, handling problems where there are multiple competing objectives, and accommodating uncertainty in the metrics. Figures, examples, and exercises convey the intuition behind the mathematical approaches. The text provides concrete implementations in the Julia programming language.
-
-Topics covered include derivatives and their generalization to multiple dimensions; local descent and first- and second-order methods that inform local descent; stochastic methods, which introduce randomness into the optimization process; linear constrained optimization, when both the objective function and the constraints are linear; surrogate models, probabilistic surrogate models, and using probabilistic surrogate models to guide optimization; optimization under uncertainty; uncertainty propagation; expression optimization; and multidisciplinary design optimization. Appendixes offer an introduction to the Julia language, test functions for evaluating algorithm performance, and mathematical concepts used in the derivation and analysis of the optimization methods discussed in the text. The book can be used by advanced undergraduates and graduate students in mathematics, statistics, computer science, any engineering field, (including electrical engineering and aerospace engineering), and operations research, and as a reference for professionals.
 
 
